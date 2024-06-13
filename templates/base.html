@@ -42,9 +42,8 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Ahemedabad, Gujarat</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 96625 44072</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>sahilsoni6658@gmail.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 72260 33784</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>startupcentre1@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -61,7 +60,11 @@
     <!-- Topbar End -->
 
     <!-- Navbar -->
-    {% include 'navbar.html' %}
+    <div class="container-fluid position-relative p-0">
+        {% include 'navbar.html' %}
+        {% block feature %}
+        {% endblock %}
+    </div>
     
     <!-- Main content -->
     {% block content %}
