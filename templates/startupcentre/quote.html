@@ -71,18 +71,18 @@
                             {% csrf_token %}
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" name="name" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" name="name" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
                                     <select name="services" class="form-select bg-light border-0" style="height: 55px;">
                                         <option selected>Select A Service</option>
-                                        <option value="1">Business Consultancy</option>
-                                        <option value="2">Certification</option>
-                                        <option value="3">Government Grants</option>
-                                        <option value="4">Funding</option>
+                                        <option value="Business Consultancy">Business Consultancy</option>
+                                        <option value="Certification">Certification</option>
+                                        <option value="Government Grants">Government Grants</option>
+                                        <option value="Funding">Funding</option>
                                     </select>
                                 </div>
                                 <div class="col-12">

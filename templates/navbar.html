@@ -14,9 +14,9 @@
                 <a href="{% url 'startup_app:home' %}" class="nav-item nav-link {% active_url request 'home' %}">Home</a>
                 <a href="{% url 'startup_app:about' %}" class="nav-item nav-link {% active_url request 'about' %}">About</a>
                 <a href="{% url 'startup_app:services' %}" class="nav-item nav-link {% active_url request 'services' %}">Services</a>
-                <a href="{% url 'startup_app:blog' %}" class="nav-item nav-link {% active_url request 'blog' %}">
+                {% comment %} <a href="{% url 'startup_app:blog' %}" class="nav-item nav-link {% active_url request 'blog' %}">
                     Blog
-                </a>
+                </a> {% endcomment %}
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle {% active_url request 'more' %}" data-bs-toggle="dropdown">More</a>
                     <div class="dropdown-menu m-0">
