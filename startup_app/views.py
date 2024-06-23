@@ -96,3 +96,6 @@ def contact(request):
 		messages.success(request, "Your message has been sent successfully!")
 		return redirect('startup_app:home')
 	return render(request, 'startupcentre/contact.html')
+
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)
